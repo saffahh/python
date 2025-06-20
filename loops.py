@@ -533,7 +533,8 @@
 #         print(b,end=" ")
 #         b+=1
 #     print() 
-
+# ------------------------------------------------
+ 
 # --------------------------------------------left side decreasing
 
 # n=5
@@ -541,6 +542,7 @@
 #     for j in range(i,n):
 #         print("* ",end=" ")
 #     print() 
+
 # ---------------------------------------------------------------------right side triangle increasing
 # n=5
 # for i in range(0,n):
@@ -904,4 +906,82 @@
 # else:
 #     print("a is equivalent to b")    
 
-# -------------------------------------------------
+# -------------------------------------------------fibanocci pattern
+# n=int(input("enter the number:"))
+# a=0
+# b=1
+
+
+# for i in range(0,n):
+#     for j in range(0,i+1):
+#         print(" ",end=" ")
+#     for j in range(i,n):
+#         c=n-j
+#         print(c,end=" ")
+
+
+
+#     for j in range(i,n):
+#         c=i+j
+#         print(c,end=" ")     
+       
+#     print() 
+# ------------------------------------------------------------------------electricity bill
+# print("ELECTRICITY BILL SYSTEM")
+# n=int(input("Enter the units: "))
+# if 0<=n<100:
+#     print("amount:",5*n)
+# elif 100<=n<200:
+#     print("amount:",(100*5)+((n-100)*8))
+# elif 200<=n<300:
+#     print("amount:",((100*5)+(100*8)+((n-200)*10)))      
+# else:
+#     print("amount:",((100*5)+(100*8)+((n-200)*10)))   
+#  -----------------------------------------------------------------------   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# -------------------------------------------fibanocci
+# a=int(input("fibanocci series..:"))
+# b=0
+# c=1
+# d=0
+# z=[]
+# z.append(b)
+# z.append(c)
+# for i in range(1,a-1):
+#     d=b+c
+#     b=c
+#     c=d
+#     z.append(d)
+# print(z)    
