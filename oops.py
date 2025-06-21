@@ -272,13 +272,22 @@
 #     def fun3(self):
 #         print("this function is in child2") 
 
-# class derived(Parent,child1):
+# class derived(child2,child1):
 #     def fun4(self):
 #         print("this is multiple inheritence") 
+
+# c=child1()
+# c.fun1()
+# c.fun2()
+
+# b=child2()
+# b.fun1()
+# b.fun3()        
 
 
 # a=derived()
 # a.fun1()
+# a.fun2()
 
 # -------------------------------------------------------POLYMORPHISM
 # class Birds:
@@ -313,35 +322,94 @@
 # print("bank:",b3.get())
 
 # --------------------------------------------------------
-class Bird:
-    def intro(self):
-        print("birds")
+# class Bird:
+#     def intro(self):
+#         print("birds")
 
-    def flight(self):
-        print("bird can fly")
-class Sparrow(Bird):
-    def flight(self):
-        print("sparrow")
+#     def flight(self):
+#         print("bird can fly")
+# class Sparrow(Bird):
+#     def flight(self):
+#         print("sparrow")
 
-class Ostrich(Bird):
-    def flight(self):
-        print("ostrich")
-
-
-a=Bird()
-b=Sparrow()
-c=Ostrich()
-
-a.intro()
-a.flight()
-b.flight()
-c.flight()
-c.intro()
+# class Ostrich(Bird):
+#     def flight(self):
+#         print("ostrich")
 
 
+# a=Bird()
+# b=Sparrow()
+# c=Ostrich()
+
+# a.intro()
+# a.flight()
+# b.flight()
+# c.flight()
+# c.intro()
+
+# --------------------------------------------------------------------------
     
-
+# class Base:
+#     def __init__(self):
+#         self.a=2
+# class Derived(Base):
+#     def __init__(self):
+#         Base.__init__(self)
+#         print("calling protected of base class",self.a)
+#         self.a=3
+#         print("calling modifidied protected member outside class",self.a)
+# obj1=Derived()
+# obj2=Base()            
                
+# ----------------------------------
+# class Base:
+#     def __init__(self):
+#         self.a='hello'
+#         self.__c='world'
 
+# class Derived:
+#     def __init__(self):
+#         Base.__init__(self)
+#         print("calling privite member of base class:")
+#         print(self.__c)        
 
+# obj1=Base()
+# print(obj1.a)
+# print(obj1.c)
 
+# obj2=Derived()
+# print(obj2.a)
+# print(obj2.c)
+
+# ----------------------------------------------------------------
+# from abc import ABC,abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def make_sound(self):
+#         pass
+# class Dog(Animal):
+#     def make_sound(self):
+#         return "boww"
+
+# class Cat(Animal):
+#     def make_sound(self):
+#         return "meoww"   
+
+# dog=Dog()
+# cat=Cat()
+
+# print(dog.make_sound())
+# print(cat.make_sound())
+
+# ----------------------------------------------------------------------------
+n=int(input("enter: "))
+
+if n%2==0:
+    if 2<=n<=5:
+        print("Not Weird")
+    elif 6<=n<=20:
+        print("Not Weird")
+    else:
+        print("Not Weird")         
+else:
+    print("Weird")
