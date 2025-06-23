@@ -401,15 +401,34 @@
 # print(dog.make_sound())
 # print(cat.make_sound())
 
-# ----------------------------------------------------------------------------
-n=int(input("enter: "))
+# ----------------------------------------------------------------generator
+# def gen():
+#     yield 10
+#     yield 20
+#     yield 30
+# n=gen()
+# print(next(n))    
+# print(next(n))  
+# print(next(n))  
+# print(next(n))  
 
-if n%2==0:
-    if 2<=n<=5:
-        print("Not Weird")
-    elif 6<=n<=20:
-        print("Not Weird")
-    else:
-        print("Not Weird")         
-else:
-    print("Weird")
+# -----------------------------------------------usin loop
+# def gen():
+#     yield 10
+#     yield 20
+#     yield 30
+# n=gen()
+# for i in n:
+#     print(i)
+
+# -----------------------------------------------------pickling
+# import pickle
+# students=[{"name":"alice","age":20},{"name":"safa","age":21}]
+# with open("students.pkl","wb") as file:
+#     pickle.dump(students,file)
+
+# with open("students.pkl","rb") as file:
+#     loaded_students=pickle.load(file)
+# print(loaded_students)   
+# ------------------------------------------------- 
+    
